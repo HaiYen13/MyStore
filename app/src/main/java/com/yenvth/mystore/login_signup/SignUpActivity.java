@@ -1,12 +1,10 @@
-package com.yenvth.mystore;
+package com.yenvth.mystore.login_signup;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -17,6 +15,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
+
+import com.yenvth.mystore.R;
 
 public class SignUpActivity extends AppCompatActivity {
     private TextView tvLogin;
@@ -63,8 +63,8 @@ public class SignUpActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                if(edtName.getText().toString().isEmpty()){
-                    edtName.setCompoundDrawablesWithIntrinsicBounds(null,null,null,null);
+                if(s.toString().isEmpty()){
+                    edtName.setCompoundDrawables(null,null,null,null);
                 }else
                 edtName.setCompoundDrawablesWithIntrinsicBounds(null, null, ResourcesCompat.getDrawable(getResources(), R.drawable.ic_outline_check, null), null);
             }

@@ -11,8 +11,19 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="headline">Sign up</string>
     <string name ="sign_up">SIGN UP</string>
-    <string name ="login">LOGIN</string>
+    <string name ="login">Login</string>
     <string name ="forgot_password">Forgot password</string>
     <string name ="forgot_password_send_btn">SEND</string>
     <string name ="forgot_password_tv">Please, enter your email address. You will receive a link to create a new password via email.</string>
+    <string name ="not_valid_email_address">Not a valid email address. Should be your@email.com</string>
+    <string name="fashion_sale">Fashion sale</string>
+    <string name="new_main">New</string>
+    <string name="never_seen_before">You’ve never seen it before!</string>
+    <string name="view_all">View all</string>
+    <string name="action_home">Home</string>
+    <string name="action_shop">Shop</string>
+    <string name="action_bag">Bag</string>
+    <string name="action_favorite">Favorites</string>
+    <string name="action_profile">profile</string>
+
 </resources>

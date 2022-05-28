@@ -1,10 +1,32 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.yenvth.mystore.MainActivity">
+    >
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/action_home"
+        android:title="@string/action_home"
+        android:icon="@drawable/custom_home_icon"
+        />
+    <item
+        android:id="@+id/action_shop"
+        android:title="@string/action_shop"
+        android:icon="@drawable/custom_shop_icon"
+        />
+    <item
+        android:id="@+id/action_bag"
+        android:title="@string/action_bag"
+        android:icon="@drawable/custom_bag_icon"
+        />
+    <item
+        android:id="@+id/action_favorite"
+        android:title="@string/action_favorite"
+        android:icon="@drawable/custom_favorite_icon"
+        />
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/action_profile"
+        android:icon="@drawable/custom_profile_icon"
+        />
+
+
 </menu>

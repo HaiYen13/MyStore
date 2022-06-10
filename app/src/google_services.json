@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "592772043043",
+    "project_id": "myshopapp-1306",
+    "storage_bucket": "myshopapp-1306.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592772043043:android:41550db7680fdcb7817c96",
+        "android_client_info": {
+          "package_name": "vn.uet.haiyen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592772043043-d1e9sngoakkmmcfm2td0uf2skoa4pfm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALm3mjq64th6xmCLnL0DdenzsgQrVNOCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592772043043-d1e9sngoakkmmcfm2td0uf2skoa4pfm1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

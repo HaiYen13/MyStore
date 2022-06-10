@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/recycler_view_row"
     android:weightSum="4"
-    android:orientation="horizontal">
+    android:orientation="vertical">
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp">
+
         <androidx.cardview.widget.CardView
-            android:layout_gravity="start|top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardElevation="10dp"
-            app:cardCornerRadius="20dp"
+            android:layout_gravity="start|top"
             android:layout_margin="10dp"
             app:cardBackgroundColor="@color/black"
-            app:cardMaxElevation="10dp"
-            >
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="10dp">
+
             <TextView
+                android:id="@+id/sale_new_product"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="NEW"
                 android:layout_margin="5dp"
-                android:textSize="11dp"
+                android:text="NEW"
                 android:textColor="@color/white"
-                />
+                android:textSize="11dp" />
         </androidx.cardview.widget.CardView>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <com.google.android.material.card.MaterialCardView
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardCornerRadius="15dp">
@@ -46,7 +47,7 @@
                 android:src="@drawable/img_home_recycler"
 
                 />
-        </com.google.android.material.card.MaterialCardView>
+        </androidx.cardview.widget.CardView>
 
             <LinearLayout
                 android:layout_width="wrap_content"

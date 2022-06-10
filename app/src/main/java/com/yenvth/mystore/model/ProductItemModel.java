@@ -1,16 +1,18 @@
 package com.yenvth.mystore.model;
 
 public class ProductItem {
-        private String productImg;
+        private String sale_new_product;
+        private int productImg;
         private int starNum;
         private int person;
         private String brandName;
         private String productName;
         private String old_price;
         private String new_price;
-        private int favorite_btn;
+        private boolean favorite_btn;
 
-    public ProductItem(String productImg, int starNum, int person, String brandName, String productName, String old_price, String new_price, int favorite_btn) {
+    public ProductItem(String sale_new_product, int productImg, int starNum, int person, String brandName, String productName, String old_price, String new_price, boolean favorite_btn) {
+        this.sale_new_product = sale_new_product;
         this.productImg = productImg;
         this.starNum = starNum;
         this.person = person;
@@ -21,11 +23,19 @@ public class ProductItem {
         this.favorite_btn = favorite_btn;
     }
 
-    public String getProductImg() {
+    public String getSale_new_product() {
+        return sale_new_product;
+    }
+
+    public void setSale_new_product(String sale_new_product) {
+        this.sale_new_product = sale_new_product;
+    }
+
+    public int getProductImg() {
         return productImg;
     }
 
-    public void setProductImg(String productImg) {
+    public void setProductImg(int productImg) {
         this.productImg = productImg;
     }
 
@@ -77,21 +87,22 @@ public class ProductItem {
         this.new_price = new_price;
     }
 
-    public int getFavorite_btn() {
+    public boolean isFavorite_btn() {
         return favorite_btn;
     }
 
-    public void setFavorite_btn(int favorite_btn) {
+    public void setFavorite_btn(boolean favorite_btn) {
         this.favorite_btn = favorite_btn;
     }
 
     @Override
     public String toString() {
         return "ProductItem{" +
-                "productImg='" + productImg + '\'' +
+                "sale_new_product='" + sale_new_product + '\'' +
+                ", productImg=" + productImg +
+                ", brandName='" + brandName + '\'' +
                 ", starNum=" + starNum +
                 ", person=" + person +
-                ", brandName='" + brandName + '\'' +
                 ", productName='" + productName + '\'' +
                 ", old_price='" + old_price + '\'' +
                 ", new_price='" + new_price + '\'' +

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.ChipGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:singleLine="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="90dp">
+    <com.google.android.material.chip.Chip
+        style="@style/metropolis"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="Hight-Top"
+        android:textColor="@color/white" />
+</androidx.cardview.widget.CardView>
+
+
+
+</com.google.android.material.chip.ChipGroup>

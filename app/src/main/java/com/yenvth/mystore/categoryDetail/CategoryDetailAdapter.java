@@ -53,7 +53,7 @@ public class CategoryDetailAdapter extends RecyclerView.Adapter<CategoryDetailAd
     @Override
     public void onBindViewHolder(@NonNull ViewHoder holder, int position) {
         ProductItemModel model = dataList.get(position);
-//        holder.imgProduct.setImageResource(R.drawable.product_cato);
+        holder.imgProduct.setImageResource(R.drawable.img_giay_nam_8);
         holder.ratingBar.setRating(model.getStarNum());
         holder.tvRatingPerson.setText("(" + model.getPerson() + ")");
         holder.tvBrandName.setText(model.getBrandName() + "");

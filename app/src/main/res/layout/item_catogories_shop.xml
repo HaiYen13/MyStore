@@ -29,10 +29,10 @@
         <ImageView
             android:id="@+id/categoties_img"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="130dp"
             android:layout_weight="1"
             android:scaleType="fitXY"
-            android:src="@drawable/img_card_categories_shop" />
+            android:src="@drawable/img_repository_1" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

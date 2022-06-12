@@ -29,10 +29,10 @@
                 <ImageView
                     android:id="@+id/img_product"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="130dp"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
-                    android:src="@drawable/product_cato" />
+                    android:src="@drawable/img_giay_nam_8" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"

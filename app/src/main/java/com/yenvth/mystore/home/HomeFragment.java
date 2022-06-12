@@ -58,15 +58,15 @@ public class HomeFragment extends Fragment implements NewProductHomeAdapter.OnIt
     }
     private void getData(){
 
-        mListNewProductItemModels.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "T-shirt", "10$", "5$", false));
-        mListNewProductItemModels.add(new ProductItemModel("New", item_home_img, 3, 8, "Boo", "T-shirt", "10$", "5$", false));
-        mListNewProductItemModels.add(new ProductItemModel("New", item_home_img, 3, 8, "Boo", "T-shirt", "10$", "5$", false));
-        mListNewProductItemModels.add(new ProductItemModel("New", item_home_img, 3, 8, "Boo", "T-shirt", "10$", "5$", false));
-        mListNewProductItemModels.add(new ProductItemModel("New", item_home_img, 3, 8, "Boo", "T-shirt", "10$", "5$", false));
-        mListSaleProductItemModels.add(new ProductItemModel("20%", item_home_img, 4, 7, "Boo", "T-shirt", "10$", "5$", false));
-        mListSaleProductItemModels.add(new ProductItemModel("30%", item_home_img, 3, 6, "Boo", "T-shirt", "10$", "5$", false));
-        mListSaleProductItemModels.add(new ProductItemModel("30%", item_home_img, 3, 6, "Boo", "T-shirt", "10$", "5$", false));
-        mListSaleProductItemModels.add(new ProductItemModel("30%", item_home_img, 3, 6, "Boo", "T-shirt", "10$", "5$", false));
+        mListNewProductItemModels.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "BASAS", "10$", "5$", false));
+        mListNewProductItemModels.add(new ProductItemModel("New", item_home_img, 3, 8, "Boo", "BASAS", "10$", "5$", false));
+        mListNewProductItemModels.add(new ProductItemModel("New", item_home_img, 3, 8, "Boo", "BASAS", "10$", "5$", false));
+        mListNewProductItemModels.add(new ProductItemModel("New", item_home_img, 3, 8, "Boo", "BASAS", "10$", "5$", false));
+        mListNewProductItemModels.add(new ProductItemModel("New", item_home_img, 3, 8, "Boo", "BASAS", "10$", "5$", false));
+        mListSaleProductItemModels.add(new ProductItemModel("20%", item_home_img, 4, 7, "Boo", "BASAS", "10$", "5$", false));
+        mListSaleProductItemModels.add(new ProductItemModel("30%", item_home_img, 3, 6, "Boo", "BASAS", "10$", "5$", false));
+        mListSaleProductItemModels.add(new ProductItemModel("30%", item_home_img, 3, 6, "Boo", "BASASt", "10$", "5$", false));
+        mListSaleProductItemModels.add(new ProductItemModel("30%", item_home_img, 3, 6, "Boo", "BASAS", "10$", "5$", false));
         mNewProductAdapter = new NewProductHomeAdapter(mListNewProductItemModels,getContext(), this);
         mRcvNewProductHome.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
         mRcvNewProductHome.setAdapter(mNewProductAdapter);

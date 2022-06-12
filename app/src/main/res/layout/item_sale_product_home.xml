@@ -42,9 +42,9 @@
 
                 <ImageView
                     android:id="@+id/item_home_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/img_home_recycler"
+                    android:layout_width="130dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/img_giay_nam_3"
 
                     />
             </androidx.cardview.widget.CardView>

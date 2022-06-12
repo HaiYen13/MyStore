@@ -46,7 +46,7 @@ public class NewProductHomeAdapter extends RecyclerView.Adapter<NewProductHomeAd
     public void onBindViewHolder(@NonNull ViewHoder holder, int position) {
         ProductItemModel model = productItemModelHomes.get(position);
         holder.tvSaleNewProduct.setText(model.getSale_new_product()+"");
-        holder.imgProduct.setImageResource(R.drawable.img_home_recycler);
+        holder.imgProduct.setImageResource(R.drawable.img_giay_nam_2);
         holder.ratingBar.setRating(model.getStarNum());
         holder.tvRatingPerson.setText("(" + model.getPerson() + ")");
         holder.tvBrandName.setText(model.getBrandName() + "");

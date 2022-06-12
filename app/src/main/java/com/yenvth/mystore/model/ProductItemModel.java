@@ -1,6 +1,6 @@
 package com.yenvth.mystore.model;
 
-public class ProductItem {
+public class ProductItemModel {
         private String sale_new_product;
         private int productImg;
         private int starNum;
@@ -11,7 +11,7 @@ public class ProductItem {
         private String new_price;
         private boolean favorite_btn;
 
-    public ProductItem(String sale_new_product, int productImg, int starNum, int person, String brandName, String productName, String old_price, String new_price, boolean favorite_btn) {
+    public ProductItemModel(String sale_new_product, int productImg, int starNum, int person, String brandName, String productName, String old_price, String new_price, boolean favorite_btn) {
         this.sale_new_product = sale_new_product;
         this.productImg = productImg;
         this.starNum = starNum;

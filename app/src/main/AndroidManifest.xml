@@ -20,6 +20,7 @@
         <activity android:name=".login_signup.SignUpActivity"/>
         <activity android:name=".login_signup.LoginActivity"/>
         <activity android:name=".login_signup.ForgotPasswordActivity"/>
+        <activity android:name=".categoryDetail.CategoryDetailActivity"/>
     </application>
 
 </manifest>

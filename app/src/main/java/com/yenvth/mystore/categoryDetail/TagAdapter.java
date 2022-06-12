@@ -13,11 +13,11 @@ import com.yenvth.mystore.R;
 
 import java.util.ArrayList;
 
-public class CategoryTypeAdapter extends RecyclerView.Adapter<CategoryTypeAdapter.ViewHoder> {
+public class TagAdapter extends RecyclerView.Adapter<TagAdapter.ViewHoder> {
     private ArrayList<String> dataList = new ArrayList<>();
     private Context context;
 
-    public CategoryTypeAdapter(ArrayList<String> dataList, Context context) {
+    public TagAdapter(ArrayList<String> dataList, Context context) {
         this.dataList = dataList;
         this.context = context;
     }

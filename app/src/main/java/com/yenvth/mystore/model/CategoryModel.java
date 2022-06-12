@@ -1,10 +1,10 @@
 package com.yenvth.mystore.model;
 
-public class Category {
+public class CategoryModel {
     private String categoryName;
     private int categoryImage;
 
-    public Category(String categoryName, int categoryImage) {
+    public CategoryModel(String categoryName, int categoryImage) {
         this.categoryName = categoryName;
         this.categoryImage = categoryImage;
     }

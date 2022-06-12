@@ -1,13 +1,8 @@
 package com.yenvth.mystore.main;
 
-import android.app.ActivityManager;
 import android.os.Bundle;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
-import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 import com.yenvth.mystore.R;
 import com.yenvth.mystore.bag.BagFragment;
 import com.yenvth.mystore.favorites.FavoriteFragment;
@@ -16,20 +11,20 @@ import com.yenvth.mystore.profile.ProfileFragment;
 import com.yenvth.mystore.shop.ShopFragment;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.view.menu.MenuBuilder;
-import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-import android.view.View;
-
-import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    NavigationBarView navigationBarView;
+    private NavigationBarView navigationBarView;
+    private Fragment homeFragment = new HomeFragment();
+    private Fragment shopFragment = new ShopFragment();
+    private Fragment bagFragment = new BagFragment();
+    private Fragment favoriteFragment = new FavoriteFragment();
+    private Fragment profileFragment = new ProfileFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,53 +32,56 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        loadFragment(homeFragment);
         initView();
         initAction();
 
-//        navigationBarView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener(){
-//
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//
-//                }
-//                return false;
-//            }
-//
-//        });
     }
+
     private void initView(){
         navigationBarView = findViewById(R.id.bottom_navi);
         navigationBarView.setItemIconTintList(null);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentManager, new HomeFragment()).commit();
+
 
     }
     private void initAction(){
-
         navigationBarView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment selectedFragment  = null;
                 switch (item.getItemId()){
                     case R.id.action_home:
-                        selectedFragment = new HomeFragment();
+                        selectedFragment = homeFragment;
                         break;
                     case R.id.action_shop:
-                        selectedFragment = new ShopFragment();
+                        selectedFragment = shopFragment;
                         break;
                     case R.id.action_bag:
-                        selectedFragment = new BagFragment();
+                        selectedFragment = bagFragment;
                         break;
                     case R.id.action_favorite:
-                        selectedFragment = new FavoriteFragment();
+                        selectedFragment = favoriteFragment;
                         break;
                     case R.id.action_profile:
-                        selectedFragment = new ProfileFragment();
+                        selectedFragment = profileFragment;
                         break;
+                    default:
+                        selectedFragment =homeFragment;
 
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentManege, selectedFragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentManager, selectedFragment).commit();
                 return true;
             }
         });
+
+    }
+    private void loadFragment(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.bottom_navi, fragment);
+        transaction.commit();
 
     }
 

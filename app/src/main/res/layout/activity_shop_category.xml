@@ -1,128 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shop_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:id="@+id/shop_fragment">
+    android:padding="10dp">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
         <ImageView
-            android:layout_alignParentLeft="true"
             android:id="@+id/back_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_back"/>
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_back" />
+
         <TextView
-            android:layout_centerInParent="true"
+            style="@style/headline3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/headline3"
+            android:layout_centerInParent="true"
             android:text="Categories" />
+
         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_gravity="right|center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_search"
-            />
+            android:src="@drawable/ic_search" />
     </RelativeLayout>
+
     <TextView
+        style="@style/headline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nike"
-        style="@style/headline"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:text="Nike" />
 
-    <HorizontalScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rcv_category_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/category_type_rcv"
-                android:layout_width="match_parent"
+            android:overScrollMode="never"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_tag" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/filter_img"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:itemCount="2"
-                tools:listitem="@layout/item_categories_type_shop"
-                />
+                android:src="@drawable/ic_filter" />
+
+            <TextView
+                android:id="@+id/filter_tv"
+                style="@style/metropolis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/filter_img"
+                android:text="Filter" />
         </LinearLayout>
 
-    </HorizontalScrollView>
-    <RelativeLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-       <LinearLayout
-           android:layout_alignParentLeft="true"
-           android:layout_centerInParent="true"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content">
-           <ImageView
-               android:id="@+id/filter_img"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:src="@drawable/ic_filter"/>
-           <TextView
-               android:id="@+id/filter_tv"
-               android:layout_marginLeft="10dp"
-               style="@style/metropolis"
-               android:layout_toRightOf="@id/filter_img"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Filter"/>
-       </LinearLayout>
         <LinearLayout
-            android:layout_centerInParent="true"
-            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
             <ImageView
                 android:id="@+id/sort_img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_sort"/>
+                android:src="@drawable/ic_sort" />
+
             <TextView
                 android:id="@+id/sort_tv"
                 style="@style/metropolis"
-                android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Price: lowest to high"/>
+                android:layout_marginLeft="10dp"
+                android:text="Price: lowest to high" />
         </LinearLayout>
-    <LinearLayout
-        android:layout_alignParentEnd="true"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageView
-            android:id="@+id/shape_img"
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_shape"/>
-    </LinearLayout>
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/shape_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_shape" />
+        </LinearLayout>
 
     </RelativeLayout>
+
     <androidx.core.widget.NestedScrollView
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/catogories_rcv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:itemCount="5"
-                tools:listitem="@layout/item_category_type2_shop"/>
+                tools:listitem="@layout/item_category_product_table" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

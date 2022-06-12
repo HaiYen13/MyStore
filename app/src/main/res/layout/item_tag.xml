@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.chip.ChipGroup xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_tag"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    app:singleLine="true"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
-<androidx.cardview.widget.CardView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:cardCornerRadius="90dp">
-    <com.google.android.material.chip.Chip
+    android:layout_marginRight="10dp"
+    android:gravity="center"
+    android:background="@drawable/bg_item_tag">
+
+    <TextView
+        android:id="@+id/tv_item_tag"
         style="@style/metropolis"
-        android:padding="10dp"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:includeFontPadding="false"
         android:text="Hight-Top"
         android:textColor="@color/white" />
-</androidx.cardview.widget.CardView>
 
-
-
-</com.google.android.material.chip.ChipGroup>
+</LinearLayout>

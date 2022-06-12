@@ -66,6 +66,13 @@ public class CategoryDetailActivity extends AppCompatActivity implements Categor
         detailCategories.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "T-OFFWHITE", "10$", "5$", false));
         detailCategories.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "T-OFFWHITE", "10$", "5$", false));
         detailCategories.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "T-OFFWHITE", "10$", "5$", false));
+        detailCategories.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "T-OFFWHITE", "10$", "5$", false));
+        detailCategories.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "T-OFFWHITE", "10$", "5$", false));
+        detailCategories.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "T-OFFWHITE", "10$", "5$", false));
+        detailCategories.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "T-OFFWHITE", "10$", "5$", false));
+        detailCategories.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "T-OFFWHITE", "10$", "5$", false));
+        detailCategories.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "T-OFFWHITE", "10$", "5$", false));
+        detailCategories.add(new ProductItemModel("New", item_home_img, 3, 10, "Boo", "T-OFFWHITE", "10$", "5$", false));
         mDetailAdapter = new CategoryDetailAdapter(detailCategories, this, this,1);
         mRcvDetailCatogories.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
         mRcvDetailCatogories.setAdapter(mDetailAdapter);
